@@ -1,5 +1,7 @@
-package org.dummy.junit;
+package org.dummy.junit.component;
 
+import org.dummy.junit.component.DollarCalculator;
+import org.dummy.junit.component.MarketApi;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;

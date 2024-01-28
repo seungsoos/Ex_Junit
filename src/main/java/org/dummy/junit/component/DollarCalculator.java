@@ -1,14 +1,17 @@
-package org.dummy.junit;
+package org.dummy.junit.component;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Component;
 
+@Component
 @RequiredArgsConstructor
-public class DollarCalculator implements ICalculator{
+public class DollarCalculator implements ICalculator {
 
     private final MarketApi marketApi;
 
     private int price = 1;
 
+    @Override
     public void init() {
         this.price = marketApi.connect();
     }

@@ -1,6 +1,9 @@
-package org.dummy.junit;
+package org.dummy.junit.component;
 
-public class KrwCalculator implements ICalculator{
+import org.springframework.stereotype.Component;
+
+
+public class KrwCalculator implements ICalculator {
 
     private int price = 1;
     @Override
@@ -15,5 +18,10 @@ public class KrwCalculator implements ICalculator{
         x *= price;
         y *= price;
         return x - y;
+    }
+
+    @Override
+    public void init() {
+
     }
 }
